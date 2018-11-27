@@ -10,7 +10,5 @@ public class TestController {
     @RequestMapping("/{name}")
     public String greeting(@PathVariable String name) {
         return name;
-
-
     }
 }
