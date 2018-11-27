@@ -1,6 +1,7 @@
 package com.example.aopdemo.aop;
 
 import org.aspectj.lang.JoinPoint;
+import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.slf4j.Logger;
@@ -10,12 +11,18 @@ import org.springframework.context.annotation.Configuration;
 @Aspect
 @Configuration
 public class UserAccessAspect {
-    Logger log=LoggerFactory.getLogger(this.getClass());
+    private static final Logger log=LoggerFactory.getLogger(UserAccessAspect.class);
 
-    @Before("execution(* com.example.aopdemo.dao.*.*(..))")
+    @Before("within(com.example.aopdemo.controller.*)")
     public void beforeAdvice(JoinPoint joinPoint){
-        log.info(" Check for user access");
-        log.info(" Allow execution for {}",joinPoint);
+        log.info("Entry: {}",joinPoint.getStaticPart());
     }
+
+    @After("within(com.example.aopdemo.controller.*)")
+    public void afterAdvice(JoinPoint joinPoint){
+        log.info("Exit: {}",joinPoint.getSignature().getName());
+    }
+
+
 
 }

@@ -14,7 +14,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 @SpringBootTest
 public class BusinessAopSpringBootTest {
 
-    Logger log=LoggerFactory.getLogger(this.getClass());
+    private static final Logger log=LoggerFactory.getLogger(BusinessAopSpringBootTest.class);
 
     @Autowired
     private Business1 business1;
@@ -26,7 +26,5 @@ public class BusinessAopSpringBootTest {
     public void printBusinessLayer(){
         log.info("Printing from business 1 test: "+business1.calculateSomething());
         log.info("Printing from business 2 test: "+business2.caculateSomething());
-
-
     }
 }
