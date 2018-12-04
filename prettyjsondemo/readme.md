@@ -6,9 +6,9 @@
 
 ```
 <dependency>
-    <groupId>com.fasterxml.jackson.core</groupId>
-    <artifactId>jackson-databind</artifactId>
-    <version>2.9.4</version>
+  <groupId>com.fasterxml.jackson.core</groupId>
+  <artifactId>jackson-databind</artifactId>
+  <version>[2.9.5,)</version>
 </dependency>
 ```
 - Add getObjectMapper method in controller class.
