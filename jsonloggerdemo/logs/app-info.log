@@ -1,0 +1,21 @@
+[DEBUG] 2018-12-16 15:30:54.014 [main] Driver - debug
+[INFO ] 2018-12-16 15:30:54.018 [main] Driver - info
+[WARN ] 2018-12-16 15:30:54.018 [main] Driver - warn
+[ERROR] 2018-12-16 15:30:54.018 [main] Driver - error
+[FATAL] 2018-12-16 15:30:54.018 [main] Driver - fatal
+[DEBUG] 2018-12-16 15:31:20.081 [main] Driver - debug
+[INFO ] 2018-12-16 15:31:20.087 [main] Driver - info
+[WARN ] 2018-12-16 15:31:20.087 [main] Driver - warn
+[ERROR] 2018-12-16 15:31:20.088 [main] Driver - error
+[FATAL] 2018-12-16 15:31:20.088 [main] Driver - fatal
+[DEBUG] 2018-12-16 15:31:43.529 [main] Driver - debug
+[INFO ] 2018-12-16 15:31:43.533 [main] Driver - info
+[WARN ] 2018-12-16 15:31:43.534 [main] Driver - warn
+[ERROR] 2018-12-16 15:31:43.534 [main] Driver - error
+[FATAL] 2018-12-16 15:31:43.537 [main] Driver - fatal
+[DEBUG] 2018-12-16 15:32:46.668 [main] Driver - debug
+[INFO ] 2018-12-16 15:32:46.672 [main] Driver - info
+[WARN ] 2018-12-16 15:32:46.672 [main] Driver - warn
+[ERROR] 2018-12-16 15:32:46.672 [main] Driver - error
+[FATAL] 2018-12-16 15:32:46.672 [main] Driver - fatal
+[TRACE] 2018-12-16 15:32:46.672 [main] Driver - trace
