@@ -30,6 +30,7 @@ Folder structure is very important, if it's not correct you may not see expected
 ##### step3:
 
 Now in controller, add model and return html page as show below.
+**NOTE**: Make sure you have `@Controller` annotation instead of `@RestController`, because `@RestController` annotation will convert the responses returning from methods as JSON types.
 
     @RequestMapping("/")
     public String greeting(Map<String,Object> model){
