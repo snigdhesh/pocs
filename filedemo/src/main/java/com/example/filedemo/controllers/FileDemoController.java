@@ -18,7 +18,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 
 @RestController
-public class DownloadPDFController {
+public class FileDemoController {
 
 
     @RequestMapping(path = "/reference", method = RequestMethod.GET)
