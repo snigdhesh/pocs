@@ -77,7 +77,7 @@ public class FileDemoController {
                 .headers(headers)
                 .contentLength(pdfFile.contentLength())
                 .contentType(
-                        MediaType.parseMediaType("application/pdf"))
+                        MediaType.parseMediaType("text/plain"))
                 .body(new InputStreamResource(pdfFile.getInputStream()));
     }
 
