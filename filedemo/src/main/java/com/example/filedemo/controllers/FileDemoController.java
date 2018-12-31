@@ -33,8 +33,10 @@ public class FileDemoController {
 
         Path path = Paths.get(file.getAbsolutePath());
         ByteArrayResource resource = new ByteArrayResource(Files.readAllBytes(path));
+
         HttpHeaders headers = new HttpHeaders();
         headers.add(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=demo.json");
+
         return ResponseEntity.ok()
                 .headers(headers)
                 .contentLength(file.length())
