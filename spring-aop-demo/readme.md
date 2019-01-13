@@ -27,3 +27,15 @@ If you want to log something like below in all the methods in a package, these l
   logger.info(" Check for user access ");
           logger.info(" Allowed execution for {}", joinPoint);
 ```
+### What is aspect?
+Combination of point-cut and advice, is called aspect.
+``` 
+//Aspect (this whole piece of code below, is called aspect)
+      @Before("execution(* com.in28minutes.springboot.tutorial.basics.example.aop.data.*.*(..))") // this package name is called point-cut
+        public void before(JoinPoint joinPoint){
+          //Advice (this whole piece of code below, is called advice)
+          logger.info(" Check for user access ");
+          logger.info(" Allowed execution for {}", joinPoint);
+        }
+      } 
+``` 
