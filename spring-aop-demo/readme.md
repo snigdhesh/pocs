@@ -19,3 +19,11 @@ We can define point-cuts on methods, and those methods can be executed at partic
       } 
 ``` 
 In above code **execution(* com.in28minutes.springboot.tutorial.basics.example.aop.data.*.*(..))** is point-cut.
+
+### What is an Advice?
+Statements you want to execute, are collective called as Advice. Advice is what you want to execute at point-cut.
+If you want to log something like below in all the methods in a package, these logging statements becomes Advice.
+```
+  logger.info(" Check for user access ");
+          logger.info(" Allowed execution for {}", joinPoint);
+```
