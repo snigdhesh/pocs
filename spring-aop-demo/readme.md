@@ -18,7 +18,7 @@ We can define point-cuts on methods, and those methods can be executed at partic
         }
       } 
 ``` 
-In above code **execution(* com.in28minutes.springboot.tutorial.basics.example.aop.data.*.*(..))*** is point-cut.
+In above code **execution(* com.in28minutes.springboot.tutorial.basics.example.aop.data.*.*(..))/** is point-cut.
 
 ### What is an Advice?
 Statements you want to execute, are collective called as Advice. Advice is what you want to execute at point-cut.
