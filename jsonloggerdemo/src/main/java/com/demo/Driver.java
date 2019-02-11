@@ -4,9 +4,9 @@ import org.apache.logging.log4j.*;
 
 public class Driver {
 
-    static Logger log= LogManager.getLogger(Driver.class);
+    static Logger log = LogManager.getLogger(Driver.class);
 
-    public static void main(String args[]){
+    public static void main(String args[]) {
         System.out.println("begin logging");
         log.debug("Printing debug...");
 /*        log.info("Printing info...");
