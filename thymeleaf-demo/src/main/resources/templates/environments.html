@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Thymeleaf demo</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="webjars/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <!--Thymleaf style of linking css-->
+    <link rel="stylesheet" type="text/css" th:href="@{/css/main.css}"/>
+</head>
+<body>
+
+<div class="container">
+    <div class="starter-template">
+        <h1>Application properties</h1>
+        <!--<h2> <span th:text="'Message:'+ ${message}"></span></h2>-->
+    </div>
+    <hr>
+    <div>
+        <table class="table table-striped" th:object="${environmentModel}">
+            <thead>
+            <tr>
+                <th>Environment Name</th>
+                <th>Environment URL</th>
+            </tr>
+            </thead>
+            <tr th:each="env : *{environmentList}">
+                <td th:text="${env.name}"></td>
+                <td th:text="${env.url}"></td>
+            </tr>
+        </table>
+    </div>
+
+</div>
+
+<script type="text/javascript" src="webjars/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

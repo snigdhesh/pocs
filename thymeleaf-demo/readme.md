@@ -1,3 +1,7 @@
+###### For more info follow these useful links : 
+- https://www.baeldung.com/spring-boot-crud-thymeleaf
+- https://www.baeldung.com/thymeleaf-in-spring-mvc
+
 # How to setup thymeleaf for spring boot ?
 
 ##### step1:

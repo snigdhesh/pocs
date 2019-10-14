@@ -29,7 +29,8 @@ Logger log = LoggerFactory.getLogger(this.getClass());
     3. model object (courseList)
 
 ```
- log.info("{},{}", System.lineSeparator(), objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(courseList));
+ObjectMapper objectMapper = getObjectMapper();
+log.info("{},{}", System.lineSeparator(), objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(courseList));
 ```
 
 This will give you pretty json on IDE console, like below
