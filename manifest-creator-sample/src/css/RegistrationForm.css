@@ -1,0 +1,10 @@
+.border{
+    border: 1px solid black;
+    margin: 2%;
+    border-radius: 5px;
+    padding: 1%;
+}
+
+label{
+    font-size: 24px;
+}
